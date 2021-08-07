@@ -1,0 +1,36 @@
+body {
+  margin: 100px;
+}
+.timer {
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+
+.field {
+  padding: 30px;
+  background-color: rgb(230, 10, 164);
+  border-radius: 25%;
+}
+
+.field:not(:last-child) {
+  margin-right: 20px;
+}
+
+.value {
+  font-size: 60px;
+  color: rgb(13, 13, 13);
+}
+
+.label {
+  font-size: 18px;
+  color: rgb(13, 13, 13);
