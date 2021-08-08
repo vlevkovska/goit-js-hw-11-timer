@@ -1,12 +1,13 @@
 class CountdownTimer {
   constructor({ targetDate, onTick }) {
     this.targetDate = targetDate;
-    // this.onTick = onTick;
+    this.onTick = onTick;
     this.timerNum = document.querySelector(onTick);
     this.days = this.timerNum.childNodes[1].childNodes[1];
     this.hours = this.timerNum.childNodes[3].childNodes[1];
     this.mins = this.timerNum.childNodes[5].childNodes[1];
     this.secs = this.timerNum.childNodes[7].childNodes[1];
+    this.timerID = null;
   }
   start = setInterval(() => {
     const currentTime = Date.now();
@@ -30,7 +31,7 @@ class CountdownTimer {
 
 new CountdownTimer({
   onTick: '#timer-1',
-  targetDate: new Date('Aug 09, 2021 00:00:00'),
+  targetDate: new Date('Aug 16, 2021 00:00:00'),
 });
 
 /*ПЕРШИЙ ВАРІАНТ
